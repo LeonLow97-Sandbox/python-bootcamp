@@ -23,6 +23,17 @@ queue.popleft()
 print(queue) # deque([1, 2, 3])
 
 
+print("\n-----Size of a deque-----")
+queue = deque([1,2,3,4,5,6])
+print(len(queue)) # 6
+
+
+print("\n-----Front and Back of a deque-----")
+queue = deque([1,2,3,4,5,6])
+print(queue[0]) # 1
+print(queue[-1]) # 6
+
+
 print("\n-----Accessing Items in a deque-----")
 queue = deque([1,2,3,3,4,2,4])
 print(queue.index(4,2,5)) # 4
@@ -34,17 +45,6 @@ queue.remove(4) # removes the first occurrence of 4
 print(queue) # deque([1, 2, 3, 3, 10, 2, 4])
 
 print(queue.count(3)) # count the occurrences of 3, Output: 2
-
-
-print("\n-----Size of a deque-----")
-queue = deque([1,2,3,4,5,6])
-print(len(queue)) # 6
-
-
-print("\n-----Front and Back of a deque-----")
-queue = deque([1,2,3,4,5,6])
-print(queue[0]) # 1
-print(queue[-1]) # 6
 
 
 print("\n-----Different operations on deque-----")
