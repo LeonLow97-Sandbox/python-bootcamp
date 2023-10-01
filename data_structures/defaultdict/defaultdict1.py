@@ -12,6 +12,7 @@ def def_value():
 d = defaultdict(def_value)
 d["a"] = 7
 print(d["b"]) # Not Found!
+print(d.get("a")) # 7
 
 
 print("\n-----defaultdict items(), values(), keys()-----")
